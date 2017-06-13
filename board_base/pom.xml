@@ -117,6 +117,7 @@
 			<scope>test</scope>
 		</dependency>
 
+<!--  jacson-databind의 의존성 걸린 라이브러리들이 core를 포함하여 여러가지임. jackson이 있을 경우 jackson 관련 message converter의 설정은 유효해진다.  -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
