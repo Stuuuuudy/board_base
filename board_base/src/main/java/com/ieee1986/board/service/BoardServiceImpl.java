@@ -17,16 +17,16 @@ public class BoardServiceImpl implements BoardService {
 	@PostConstruct
 	public void initDummyData() {
 		list = new ArrayList<Article>();
-		list.add(new Article(0, 0, "Å¸ÀÌÆ²0", "³»¿ë0", 0, "2017-06-20", "admin"));
-		list.add(new Article(1, 0, "Å¸ÀÌÆ²1", "³»¿ë1", 0, "2017-06-21", "admin"));
-		list.add(new Article(2, 0, "Å¸ÀÌÆ²2", "³»¿ë2", 0, "2017-06-22", "admin"));
-		list.add(new Article(3, 0, "Å¸ÀÌÆ²3", "³»¿ë3", 0, "2017-06-23", "admin"));
-		list.add(new Article(4, 0, "Å¸ÀÌÆ²4", "³»¿ë4", 0, "2017-06-24", "admin"));
-		list.add(new Article(5, 0, "Å¸ÀÌÆ²5", "³»¿ë5", 0, "2017-06-25", "admin"));
-		list.add(new Article(6, 0, "Å¸ÀÌÆ²6", "³»¿ë6", 0, "2017-06-26", "admin"));
-		list.add(new Article(7, 0, "Å¸ÀÌÆ²7", "³»¿ë7", 0, "2017-06-27", "admin"));
-		list.add(new Article(8, 0, "Å¸ÀÌÆ²8", "³»¿ë8", 0, "2017-06-28", "admin"));
-		list.add(new Article(9, 0, "Å¸ÀÌÆ²9", "³»¿ë9", 0, "2017-06-29", "admin"));
+		list.add(new Article(0, 0, "íƒ€ì´í‹€0", "ë‚´ìš©_0", 0, "2017-06-20", "admin"));
+		list.add(new Article(1, 0, "íƒ€ì´í‹€1", "ë‚´ìš©_1", 0, "2017-06-21", "admin"));
+		list.add(new Article(2, 0, "íƒ€ì´í‹€2", "ë‚´ìš©_2", 0, "2017-06-22", "admin"));
+		list.add(new Article(3, 0, "íƒ€ì´í‹€3", "ë‚´ìš©_3", 0, "2017-06-23", "admin"));
+		list.add(new Article(4, 0, "íƒ€ì´í‹€4", "ë‚´ìš©_4", 0, "2017-06-24", "admin"));
+		list.add(new Article(5, 0, "íƒ€ì´í‹€5", "ë‚´ìš©_5", 0, "2017-06-25", "admin"));
+		list.add(new Article(6, 0, "íƒ€ì´í‹€6", "ë‚´ìš©_6", 0, "2017-06-26", "admin"));
+		list.add(new Article(7, 0, "íƒ€ì´í‹€7", "ë‚´ìš©_7", 0, "2017-06-27", "admin"));
+		list.add(new Article(8, 0, "íƒ€ì´í‹€8", "ë‚´ìš©_8", 0, "2017-06-28", "admin"));
+		list.add(new Article(9, 0, "íƒ€ì´í‹€9", "ë‚´ìš©_9", 0, "2017-06-29", "admin"));
 	}
 
 	@Override
