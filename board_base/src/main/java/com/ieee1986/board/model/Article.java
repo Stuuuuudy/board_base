@@ -10,10 +10,6 @@ public class Article {
 	private String createDate;
 	private String createId;
 
-	public Article() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public Article(int idx, int parentIdx, String title, String contents, int hitCount, String createDate,
 			String createId) {
 		this.idx = idx;
