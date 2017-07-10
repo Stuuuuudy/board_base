@@ -10,6 +10,9 @@ public class Article {
 	private String createDate;
 	private String createId;
 
+	public Article() {
+	}
+
 	public Article(int idx, int parentIdx, String title, String contents, int hitCount, String createDate,
 			String createId) {
 		this.idx = idx;
