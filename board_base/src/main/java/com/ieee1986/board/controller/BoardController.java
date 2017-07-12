@@ -43,5 +43,26 @@ public class BoardController {
 		boardService.insertArticle(article);
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}
+	
+	@RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
+	public ResponseEntity<Void> deleteArticle(@PathVariable String id) {
+		if (log.isInfoEnabled()) {
+			log.info("BoardController.deleteArticle()");
+		}
+
+		boardService.deleteArticle(id);
+		return new ResponseEntity<Void>(HttpStatus.OK);
+	}
+	
+	@RequestMapping(value = "/update", method = RequestMethod.POST) 
+	public ResponseEntity<Void> updateArticle(@RequestBody Article article) {
+		if (log.isInfoEnabled()) {
+			log.info("BoardController.updateArticle()");
+		}
+
+		boardService.updateArticle(article);
+		return new ResponseEntity<Void>(HttpStatus.OK);
+	}
+
 
 }

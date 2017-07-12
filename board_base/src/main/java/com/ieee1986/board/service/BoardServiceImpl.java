@@ -72,7 +72,21 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public void updateArticle(Article article) {
+		int id = article.getIdx();
 
+		for (int i = 0; i < list.size(); i++) {
+			Article originalArticle = list.get(i);
+
+			if (String.valueOf(originalArticle.getIdx()).equals(String.valueOf(id)) {
+				originalArticle.setContents(article.getContents());
+				originalArticle.setCreateDate(article.getCreateDate());
+				originalArticle.setCreateId(article.getCreateId());
+				originalArticle.setHitCount(article.getHitCount());
+				originalArticle.setParentIdx(article.getParentIdx());
+				originalArticle.setTitle(article.getTitle());
+				break;
+			}
+		}
 	}
 
 }
