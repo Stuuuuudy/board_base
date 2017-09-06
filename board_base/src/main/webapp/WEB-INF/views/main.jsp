@@ -18,9 +18,12 @@
 
 	<script>
 			var board = {};
+			board.manager = {};
+			board.main = {};
 	</script>
 
 	<!-- 프로젝트용 -->
+	<script src="resource/board/javascripts/manager/locationManager.js"></script>
 	<script src="resource/board/javascripts/board.js"></script>
 </head>
 <body>
