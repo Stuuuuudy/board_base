@@ -11,6 +11,11 @@ board.main = (function() {
 	var _sMap = {};
 	var _cMap = {};
 
+
+	var route = function(view, identifier) {
+		console.log('board.main.route');
+	};
+
 	/**
 	 * 초기화 함수
 	 * @param opts _cMap에 오버라이드 할 옵션
@@ -18,9 +23,13 @@ board.main = (function() {
 	 */
 	var _init = function(opts) {
 		_.extend(_cMap, opts);
+
+		board.manager.locationManager.init({route : route});
+
 		_createView();
 		_initViewState();
 	};
+
 
 	/**
 	 * main 레이아웃을 정의한다.
